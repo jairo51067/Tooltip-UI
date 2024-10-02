@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+  /* padding: 20px; */
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.3s ease;
+  /* Azul oscuro */
+  /* Azul oscuro (#212121 o #1A1D23): Un color azul oscuro es común en páginas web de calidad, ya que es fácil de leer y proporciona un contraste adecuado con el texto blanco. */
+  /* background-color: #212121;  */
+  /* Gris claro */
+  /* Gris claro (#F7F7F7 o #E5E5E5): Un gris claro es un color neutro que se utiliza comúnmente en páginas web, ya que es fácil de leer y no distrae la atención del contenido. */
+  /* background-color: #F7F7F7;  */
+  /* Verde oscuro */
+  /*  Verde oscuro (#2E865F o #1E744A): Un verde oscuro es un color que se asocia con la naturaleza y la frescura, y se utiliza comúnmente en páginas web de calidad que buscan transmitir una sensación de confianza y profesionalismo. */
+  background-color: #2E865F; 
+  /* background-color: #f1f1f1; */
+  font-size: 1rem;
+}
+
+/* Para información sobre herramientas-links que aparezca sobre los elementos de navegación cuando se pasa el cursor sobre ellos y nos muestra informacion */
+
+.topnav {
+  background-color: #333333;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20%;
+  border: none;
+  /* height: 100px; */
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.topnav a:hover {
+  /* background-color: #ddd; */
+  background-color: white;
+  /* color: black; */
+  color: black;
+}
+
+.topnav a.active {
+  background-color: white;
+  color: black;
+}
+
+.tooltip2, .tooltip3, .tooltip4 {
+  position: relative;
+  display: inline-block;
+  /* border-bottom: 1px dotted black; */
+}
+
+.tooltip1 .tooltiptext1 {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  margin: 2px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tooltip1 .tooltiptext1::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 100%; /* To the left of the tooltip */
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+
+.tooltip2 .tooltiptext2{
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  margin: 1%;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip2 .tooltiptext2::after {
+  content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip3 .tooltiptext3{
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  margin: 2px;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip3 .tooltiptext3::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;  /* At the top of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.tooltip4 .tooltiptext4{
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  margin: 1px;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: 105%;
+}
+
+.tooltip1:hover .tooltiptext1, .tooltip2:hover .tooltiptext2, 
+.tooltip3:hover .tooltiptext3, .tooltip4:hover .tooltiptext4  {
+  visibility: visible;
+  opacity: 1;
+}
+
+.contenedor-link_prueba{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.link-prueba {
+  background-color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  transition: color 0.3s;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 10px 16px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);  
+}
